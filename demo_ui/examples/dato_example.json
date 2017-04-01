@@ -1,0 +1,94 @@
+{
+    "author_comment":"Copyright (c) 2017 Juri Jäger - The full notice can be found in the LICENSE file.",
+    "build":[
+        "go",
+        "node_js",
+        "php",
+        "python",
+        
+        "android",
+        "js",
+        "swift",
+        "xamarin"
+    ],
+    "data":[
+        {
+            "class":"TestObject",
+            "table":"dato_test_obj",
+            "pk":{
+                "id":[
+                    "int",10,"NOT NULL AUTO_INCREMENT"
+                ]
+            },
+            "fields":{
+                "name":[
+                    "str",50,"NOT NULL","Name"
+                ],
+                "description":[
+                    "str",300,"NOT NULL","Description"
+                ]
+            },
+            "queries":[
+                {
+                    "name":"selectAll"
+                },
+                {
+                    "name":"listAll",
+                    "what":[
+                        "id","name"
+                    ]
+                }
+            ],
+            "module":"list",
+            "url":"dato_test_ajax.php",
+            "lk":[
+                "id","name"
+            ],
+            "xtra_pairs":{
+                "displayTitle":"Test Object: "
+            }
+        },
+        {
+            "class":"TestPerson",
+            "table":"dato_test_person",
+            "pk":{
+                "id":[
+                    "int",10,"NOT NULL AUTO_INCREMENT"
+                ]
+            },
+            "fields":{
+                "fname":[
+                    "str",50,"NOT NULL","First Name"
+                ],
+                "name":[
+                    "str",50,"NOT NULL","Last Name"
+                ],
+                "job":[
+                    "str",50,"NOT NULL","Occupation"
+                ],
+                "address":[
+                    "str",200,"NOT NULL","Address"
+                ]
+            },
+            "queries":[
+                {
+                    "name":"selectAll"
+                },
+                {
+                    "name":"listAll",
+                    "what":[
+                        "id","fname","name"
+                    ]
+                }
+            ],
+            "module":"list",
+            "url":"dato_test_ajax.php",
+            "lk":[
+                "id","fname","name"
+            ],
+            "xtra_pairs":{
+                "displayTitle":"Person: "
+            }
+        }
+    ]
+}

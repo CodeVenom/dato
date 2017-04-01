@@ -1,0 +1,62 @@
+Data Toxin ("dato") is a prototype of a cross platform scaffolding framework.
+Copyright (c) 2017 Juri Jäger
+The full notice can be found in the LICENSE file.
+
+last modified       :           4/1/2017
+
+Content:
+1. Contact Information
+2. Project Information
+3. Abstract
+4. Demo Installation
+________________________________________________________________________________
+1. Contact Information
+
+full name           :           Juri Jäger
+1st email address   :           juri.jaeger@gmail.com
+2nd email address   :           jj@intoxicoded.com
+website url         :           https://intoxicoded.com
+                                (website is under construction at the moment,
+                                visit at your own risk, don't forget the helmet)
+
+
+2. Project Information
+
+name                :           Data Toxin ("dato")
+version             :           0.1.0
+related subjects    :           #scaffolding#cross platform#software standard
+
+
+3. Abstract
+
+The idea behind Data Toxin is to create a standard for cross platform
+scaffolding for automating repetitive tasks like creating database tables,
+corresponding SQL queries, models/data access objects, controllers/server-side
+request handlers, structures for (graphical) user interfaces, AJAX stuff or any
+kind of client-side HTTP request handlers.
+
+Check the concept folder to learn more about dato.
+
+
+4. Demo Installation
+
+At the moment only the PHP and JavaScript based parts are available, so you will
+need a web server like Apache HTTP Server or just use XAMPP for testing on
+localhost.
+
+4 easy steps:
+
+    I.  Just put the whole project folder (dato) into a folder which can be
+        accessed by using HTTP requests, if you are using XAMPP just put it in
+        the htdocs folder.
+
+    II. Change the configurations in core/php/dato_config.php to match your
+        database settings.
+
+    III.Open your web browser and navigate to:
+        relative URL: demo_ui
+        absolute URL: [domain][/path to dato folder]/dato/demo_ui
+        XAMPP htdocs: localhost/dato/demo_ui
+        
+    IV. Click the button (BUILD STUFF), refresh the page and let's go.
+        Check concept/screenshots/prototype to see how it could look like.

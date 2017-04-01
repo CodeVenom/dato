@@ -1,0 +1,47 @@
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* *                             TO-DO LIST                                  * *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+________________________________________________________________________________
+Code Documentation
+#doc
+
+Well I did not do that much about code documentation so far. For now this is
+probably the most important thing on the to-do list.
+________________________________________________________________________________
+Conditional Request Processing
+#ajax
+
+Need more controllers/request handlers for various cases:
+
+    1.Restrict access to specific functions if permission level is too low.
+
+    2.Deny specific requests in general. (use bitmask, $forbidden & $request)
+
+    3.Allow only specific requests. (use bitmask, $allowed & $request)
+
+Keep the default handler (dato_AJAX) if you do not need crp.
+
+________________________________________________________________________________
+Limited Selection
+#list
+
+Selecting all entries from a table is actually unusual. Default queries for
+data retrieval in order to populate a list or an overview should contain
+following conditions and options:
+
+    1.Either something like "WHERE id < :id ORDER BY id DESC LIMIT :limit"
+
+    2.or something like "WHERE id > :id ORDER BY id ASC LIMIT :limit".
+
+The specified id must be either from the first or the last item of the current
+list page while scrolling to the left or to the right respectively.
+
+Omit the condition in order to get the data for the first page.
+________________________________________________________________________________
+Composite Keys
+#sql#ajax
+
+After inserting a new row you can only get the lastInsertId, but of course this
+does not work with composite keys. Need a workaround here. Maybe retrieve last
+row number and fetch the key after insertion.
+________________________________________________________________________________

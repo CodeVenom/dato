@@ -1,0 +1,11 @@
+Copyright (c) 2017 Juri Jäger
+The full notice can be found in the LICENSE file.
+
+0       :       reverb (Just return post parameters)
+1       :       insert
+2       :       load
+4       :       save
+8       :       remove
+16      :       createTable
+32      :       selectAll
+64      :       listAll
