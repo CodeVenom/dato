@@ -9,6 +9,7 @@ Content:
 2. Project Information
 3. Abstract
 4. Demo Installation
+5. License
 ________________________________________________________________________________
 1. Contact Information
 
@@ -60,3 +61,18 @@ localhost.
         
     IV. Click the button (BUILD STUFF), refresh the page and let's go.
         Check concept/screenshots/prototype to see how it could look like.
+        
+        
+5. License
+
+Data Toxin ("dato") is free software: you can redistribute it and/or modify it
+under the terms of the GNU General Public License ("the License") as published
+by the Free Software Foundation, either version 3 of the License, or any later
+version.
+
+Dato is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+A copy of the GNU General Public License can be found in the LICENSE file.
+If not, see <http://www.gnu.org/licenses/>.
